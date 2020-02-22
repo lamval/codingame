@@ -9,13 +9,20 @@
 
 // game loop
 while (true) {
+    
+    let maxH = 0;
+    let maxMountain = 0;
+    
     for (let i = 0; i < 8; i++) {
         const mountainH = parseInt(readline()); // represents the height of one mountain.
+       if (mountainH > maxH) {
+           maxH = mountainH;
+           maxMountain = i;
+        }
     }
 
     // Write an action using console.log()
     // To debug: console.error('Debug messages...');
 
-    console.log('4');     // The index of the mountain to fire on.
-
+    console.log(maxMountain);     // The index of the mountain to fire on.
 }
