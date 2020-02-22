@@ -1,2 +1,2 @@
 # codingame
-keeping trace of my coding game challenges
+Keeping trace of my coding game challenges
